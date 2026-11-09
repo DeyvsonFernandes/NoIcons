@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <TextClock
+        android:id="@+id/relogio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="48dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:format24Hour="HH:mm"
+        android:format12Hour="hh:mm"
+        android:textColor="#FFFFFF"
+        android:textSize="64sp"
+        android:fontFamily="@font/courierprime_regular"/>
+
+    <TextClock
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="16dp"
+        android:format24Hour="EEEE, d 'de' MMMM"
+        android:format12Hour="EEEE, d 'de' MMMM"
+        android:textColor="#888888"
+        android:textSize="16sp"
+        android:fontFamily="@font/courierprime_regular"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="24dp"
+        android:clipToPadding="false" />
+
+</LinearLayout>
